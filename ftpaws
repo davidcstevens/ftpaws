@@ -190,9 +190,7 @@ function sendftp() {
 	echo "${domains[@]}"
 	echo 
 	echo "Connecting to server..."
-	sftp -n -v $HOST << EOT
-	ls
-	quit
+	#sftp -n -v $HOST << EOT ## THROWING ERRORS!!! DEBUG WHY
 	EOT
 }
 
